@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>glTF Model</title>
+
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="robot" src="assets/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#robot"></a-entity>
+    </a-scene>
+  </body>
+</html>
