@@ -5,6 +5,28 @@
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
 
     <script type="text/javascript">
+
+
+// Color-changer
+
+    AFRAME.registerComponent("color-changer", {
+      init: function () {
+        this.el.addEventListener("mouseenter", function (evt) {
+          var color = this.getAttribute("color");
+          this.setAttribute("color", "#334565")
+          );
+        });
+        this.el.addEventListener("mouseleave", function (evt) {
+          var color = this.getAttribute("color");
+          new_x = new_x + 1;
+          this.setAttribute("color", "#334565")
+          );
+        });
+      },
+    });
+
+
+
       AFRAME.registerComponent("cursor-listener-x", {
         init: function () {
           this.el.addEventListener("click", function (evt) {
